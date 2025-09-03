@@ -3,875 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayuri Water Solution | Complete Water Softening Solutions | Indore</title>
+    <title>Mayuri Water Solution - Water Softening Experts</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #0066cc;
-            --secondary: #004080;
-            --accent: #ff9900;
-            --light-blue: #e6f2ff;
-            --light: #f0f8ff;
-            --dark: #1a2a3a;
-            --text: #333333;
-            --success: #28a745;
-            --purple: #6f42c1;
-            --teal: #20c997;
+            --primary: #2c7db7;
+            --secondary: #2a9d8f;
+            --accent: #e76f51;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --gray: #6c757d;
         }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.8;
-            color: var(--text);
-            background-color: #f9f9f9;
-            overflow-x: hidden;
+            background-color: #f5f7fa;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         
         /* Header Styles */
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--purple));
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 1.5rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
-        }
-        
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        header::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 12px;
-            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.极,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%23f9f9f9" opacity=".25"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%23f9f9f9" opacity=".5"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81极0Z" fill="%23f9f9f9"/></svg>');
-            background-size: cover;
-            z-index: 10;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
-        .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s;
-        }
-        
-        .logo:hover {
-            transform: scale(1.05);
-        }
-        
-        .logo span {
-            color: var(--accent);
-            position: relative;
-            display: inline-block;
-        }
-        
-        .logo span::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: var(--accent);
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 0.3s;
-            display: none; /* Hide on mobile */
-        }
-        
-        .logo:hover span::after {
-            transform: scaleX(1);
-            transform-origin: left;
-        }
-        
-        .tagline {
-            font-size: 1rem;
-            opacity: 0.9;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        /* Navigation */
-        nav {
-            background: linear-gradient(to right, var(--dark), var(--secondary));
-            padding: 0;
+            padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 4极 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
-        .nav-container {
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.8rem 0;
         }
         
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            justify-content: space-around;
-            width: 30px;
-            height: 25px;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            padding: 0;
+        .logo {
+            display: flex;
+            align-items: center;
         }
         
-        .menu-toggle span {
-            width: 100%;
-            height: 3px;
-            background-color: white;
-            border-radius: 5px;
-            transition: all 0.3s;
-            position: relative;
-            transform-origin: center;
+        .logo h1 {
+            font-size: 1.8rem;
+            margin-left: 10px;
+        }
+        
+        .logo-icon {
+            font-size: 2rem;
         }
         
         nav ul {
             display: flex;
-            justify-content: center;
             list-style: none;
-            padding: 0;
-            margin: 0;
-            flex-wrap: wrap;
         }
         
-        nav li {
-            margin: 0 1rem;
+        nav ul li {
+            margin-left: 25px;
         }
         
-        nav a {
+        nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: all 0.3s;
-            padding: 0.8rem 0;
-            display: block;
-            position: relative;
-            font-size: 1rem;
+            transition: all 0.3s ease;
         }
         
-        nav a:hover {
-            color: var(--accent);
-        }
-        
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom极 0;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: linear-gradient(to right, var(--accent), var(--teal));
-            transition: width 0.3s ease;
-            border-radius: 2px;
-        }
-        
-        nav a:hover::after {
-            width: 100%;
+        nav ul li a:hover {
+            color: #ffd166;
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
-            height: auto;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            color: white;
+            padding: 80px 0;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%232c7db7" fill-opacity="0.1" width="100" height="100"/><path d="M0 0L100 100" stroke="%232c7db7" stroke-opacity="0.1" stroke-width="2"/></svg>');
+            background-size: cover;
             text-align: center;
-            padding: 3rem 0;
         }
         
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        
-        .hero h1 {
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.3;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-            animation: fadeInUp 1s ease;
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--primary);
         }
         
         .hero p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity极 0.95;
-            animation: fadeInUp 1.2s ease;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: var(--gray);
         }
         
         .btn {
             display: inline-block;
-            background: linear-gradient(to right, var(--accent), #ffaa33);
+            background: var(--accent);
             color: white;
-            padding: 0.9rem 1.8rem;
+            padding: 12px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.4s;
+            transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-            box-shadow: 0 5px 20px rgba(255, 153, 0, 0.4);
-            position: relative;
-            overflow: hidden;
-            animation: fadeInUp 1.4s ease;
-            min-width: 200px;
-        }
-        
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: 0.5s;
-        }
-        
-        .btn:hover::before {
-            left: 100%;
         }
         
         .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(255, 153, 0, 0.5);
-        }
-        
-        .btn i {
-            margin-left: 8px;
-            transition: transform 0.3s;
-        }
-        
-        .btn:hover i {
-            transform: translateX(5px);
-        }
-        
-        /* Section Styles */
-        section {
-            padding: 3.5rem 0;
-            position: relative;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 2.5rem;
-            color: var(--secondary);
-            position: relative;
-            display: inline-block;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 1.8rem;
-            padding: 0 1rem;
-            width: 100%;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(to right, var(--accent), var(--teal));
-            border-radius: 2px;
+            background: #d45a3c;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
         /* Services Section */
         .services {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
         
         .service-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 10px;
             overflow: hidden;
-            transition: all 0.4s;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-            position: relative;
-            margin: 0 auto;
-            max-width: 400px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
         }
         
         .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
-        }
-        
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary), var(--accent), var(--purple));
-        }
-        
-        .service-img {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.8s;
-            display: block;
-        }
-        
-        .service-card:hover .service-img img {
-            transform: scale(1.1);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
         .service-content {
-            padding: 1.5rem;
+            padding: 25px;
         }
         
         .service-content h3 {
-            margin-top: 0;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
             color: var(--primary);
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
         }
         
-        .service-content ul {
-            padding-left: 20px;
-            margin-bottom: 1.2rem;
-        }
-        
-        .service-content ul li {
-            margin-bottom: 0.5rem;
-            position: relative;
-            transition: transform 0.3s;
-            font-size: 0.95rem;
-        }
-        
-        .service-content ul li:hover {
-            transform: translateX(5px);
-        }
-        
-        .service-content ul li::before {
-            content: '•';
-            color: var(--accent);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-        
-        /* About Section */
-        .about {
-            background: linear-gradient(to bottom, var(--light-blue), var(--light));
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .about::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%23ffffff" opacity="0.2" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
-            background-size: cover;
-            z-index: 0;
-        }
-        
-        .about-content {
-            display: flex;
-            flex-direction: column;
-            gap: 2.5rem;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .about-text {
-            order: 2;
-        }
-        
-        .about-text h2 {
+        .service-icon {
+            font-size: 2.5rem;
             color: var(--secondary);
-            margin-top: 0;
-            font-size: 1.8rem;
+            margin-bottom: 20px;
         }
         
-        .about-text p {
-            margin-bottom: 1.2rem;
-            font-size: 1rem;
-        }
-        
-        .about-features {
-            margin-top: 1.8rem;
-        }
-        
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 1.5rem;
-            transition: transform 0.3s;
-        }
-        
-        .feature-item:hover {
-            transform: translateX(8px);
-        }
-        
-        .feature-icon {
-            background: linear-gradient(135deg, var(--accent), #极aa33);
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1rem;
-            flex-shrink: 0;
-            font-size: 1rem;
-            box-shadow: 0 5px 15px rgba(255, 153, 0, 0.3);
-        }
-        
-        .about-img {
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
-            position: relative;
-            transition: transform 0.5s;
-            order: 1;
-            width: 100%;
-            max-width: 500px;
-        }
-        
-        .about-img:hover {
-            transform: scale(1.03);
-        }
-        
-        .about-img img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .about-img::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, rgba(0, 102, 204, 0.2), rgba(255, 153, 0, 0.2));
-            z-index: 1;
-        }
-        
-        /* Water Process Section */
-        .water-process {
-            background: linear-gradient(135deg, var(--secondary), var(--dark), var(--purple));
-            color: white;
-            padding: 3.5rem 0;
-            position: relative;
-        }
-        
-        .water-process::before {
-            content: '';
-            position: absolute;
-            top: -40px;
-            left: 0;
-            width: 100%;
-            height: 40px;
-            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,极.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%23f9f9f9" opacity=".25"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%23f9f9f9" opacity=".5"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23f9f9f9"/></svg>');
-            background-size: cover;
-        }
-        
-        .process-steps {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-            margin-top: 2.5rem;
-        }
-        
-        .process-step {
-            background: rgba(255, 255, 255, 0.12);
-            border-radius: 12px;
-            padding: 1.8rem;
-            text-align: center;
-            transition: all 0.4s;
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        
-        .process-step:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.18);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .step-number {
-            background: linear-gradient(135deg, var(--accent), #ffaa33);
-            color: white;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 5px 15px rgba(255, 153, 0, 0.3);
-        }
-        
-        .process-step h4 {
-            margin-top: 0;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-        
-        .process-step p {
-            font-size: 0.95rem;
-        }
-        
-        /* Contact Section */
+        /* Contact Form */
         .contact {
-            background: linear-gradient(to bottom, white, var(--light-blue));
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f7fa, #e8ecf1);
         }
         
-        .contact-container {
-            display: flex;
-            flex-direction: column;
-            gap: 2.5rem;
-        }
-        
-        .contact-info {
-            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--purple));
-            color: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-            position: relative;
-            overflow: hidden;
-            order: 2;
-        }
-        
-        .contact-info::before {
-            content: '';
-            position: absolute;
-            top: -40px;
-            right: -40px;
-            width: 120px;
-            height: 120px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-        }
-        
-        .contact-info::after {
-            content: '';
-            position: absolute;
-            bottom: -20px;
-            left: -20px;
-            width: 80px;
-            height: 80px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-        }
-        
-        .contact-info h3 {
-            margin-top: 0;
-            font-size: 1.6rem;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .contact-details {
-            margin-top: 1.8rem;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 1.5rem;
-            transition: transform 0.3s;
-        }
-        
-        .contact-item:hover {
-            transform: translateX(5px);
-        }
-        
-        .contact-icon {
-            background: linear-gradient(135deg, var(--accent), #ffaa33);
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1rem;
-            flex-shrink: 0;
-            box-shadow: 0 5px 15px rgba(255, 153, 0, 0.3);
-        }
-        
-        .contact-text h4 {
-            margin: 0 0 0.3rem;
-            font-size: 1.1rem;
-            color: white;
-        }
-        
-        .contact-text a, .contact-text p {
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-            transition: all 0.3s;
-            display: block;
-            margin-bottom: 0.3rem;
-            font-size: 0.95rem;
-        }
-        
-        .contact-text a:hover {
-            color: var(--accent);
-            text-decoration: underline;
-            transform: translateX(3px);
-        }
-        
-        .contact-form {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-            order: 1;
-            max-width: 600px;
+        .form-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
             margin: 0 auto;
-            width: 100%;
+        }
+        
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary);
         }
         
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 20px;
         }
         
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 8px;
             font-weight: 500;
-            color: var(--secondary);
-            font-size: 0.95rem;
         }
         
         .form-control {
             width: 100%;
-            padding: 0.9rem 1rem;
-            border: 2px solid #e1e5eb;
-            border-radius: 8px;
-            font-family: inherit;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
             font-size: 1rem;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
         }
         
         .form-control:focus {
-            outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(44, 125, 183, 0.1);
         }
         
         textarea.form-control {
-            min-height: 140px;
+            min-height: 120px;
             resize: vertical;
         }
         
-        .submit-btn {
-            background: linear-gradient(to right, var(--accent), #ffaa33);
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.4s;
+        .whatsapp-btn {
+            background: #25D366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 5px 20px rgba(255, 153, 0, 0.3);
-            position: relative;
-            overflow: hidden;
+            padding: 15px;
+            margin-top: 10px;
         }
         
-        .submit-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90极, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: 0.5s;
+        .whatsapp-btn:hover {
+            background: #128C7E;
         }
         
-极        .submit-btn:hover::before {
-            left: 100%;
-        }
-        
-        .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 153, 0, 0.4);
-        }
-        
-        /* Benefits Section */
-        .service-benefits {
-            margin-top: 3.5rem;
-        }
-        
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.8rem;
-        }
-        
-        .benefit-card {
-            background: linear-gradient(145deg, #ffffff, #f0f0极0);
-            border-radius极 12px;
-            padding: 1.8rem;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s;
-            text-align: center;
-            border-left: 4px solid var(--accent);
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        
-        .benefit-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-            border-left: 4px solid var(--purple);
-        }
-        
-        .benefit-icon {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, var(--primary), var(--purple));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-        
-        .benefit-card h4 {
-            margin-top: 0;
-            color: var(--secondary);
+        .whatsapp-icon {
+            margin-right: 10px;
             font-size: 1.2rem;
         }
         
-        .benefit-card p {
-            font-size: 0.95rem;
+        /* Contact Info */
+        .contact-info {
+            padding: 60px 0;
+            background: white;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .info-card {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background: var(--light);
+            transition: all 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .info-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
         }
         
         /* Footer */
         footer {
-            background: linear-gradient(to right, var(--dark), var(--secondary));
+            background: var(--dark);
             color: white;
-            padding: 3rem 0 2rem;
+            padding: 40px 0 20px;
         }
         
         .footer-content {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 2.5rem;
-            margin-bottom: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
         }
         
-        .footer-column h3 {
-            color: var(--accent);
-            margin-top: 0;
-            margin-bottom: 1.5rem;
+        .footer-section h3 {
             font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ffd166;
         }
         
-        .footer-column p {
-            opacity: 0.85;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
+        .footer-section p {
+            margin-bottom: 10px;
         }
         
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .footer-links li {
-            margin-bottom: 0.8rem;
-            transition: transform 0.3s;
-        }
-        
-        .footer-links li:hover {
-            transform: translateX(3px);
-        }
-        
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s;
-            opacity: 0.85;
-            display: block;
-            font-size: 0.95rem;
-        }
-        
-        .footer-links a:hover {
-            color: var(--accent);
-            opacity: 1;
-        }
-        
-        .social-links {
+        .social-icons {
             display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
+            gap: 15px;
+            margin-top: 20px;
         }
         
-        .social-links a {
-            display: flex;
+        .social-icons a {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 40px;
@@ -879,268 +330,47 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             color: white;
-            transition: all 0.3s;
+            text-decoration: none;
+            transition: all 0.3s ease;
         }
         
-        .social-links a:hover {
-            background: linear-gradient(135deg, var(--accent), #ffaa33);
+        .social-icons a:hover {
+            background: var(--primary);
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(255, 153, 0, 0.3);
         }
         
         .copyright {
             text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
-            opacity: 0.8;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 0.9rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .water-drop {
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            pointer-events: none;
-            animation: dropFall linear forwards;
-        }
-        
-        @keyframes dropFall {
-            0% {
-                transform: translateY(-20px) scale(0.5);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(100px) scale(1);
-                opacity: 0;
-            }
+            color: rgba(255, 255, 255, 0.7);
         }
         
         /* Responsive Design */
         @media (max-width: 768px) {
-            .menu-toggle {
-                display: flex;
+            .header-content {
+                flex-direction: column;
+                text-align: center;
             }
             
             nav ul {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                background: linear-gradient(to right, var(--dark), var(--secondary));
-                padding: 1rem 0;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-                z-index: 99;
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
             
-            nav ul.active {
-                display: flex;
+            nav ul li {
+                margin: 0 10px 10px;
             }
             
-            nav极 {
-                margin: 0;
-                width: 100%;
-                text-align: center;
+            .hero h2 {
+                font-size: 2.2rem;
             }
             
-            nav a {
-                padding: 1rem;
-                font-size: 1.1rem;
+            .form-container {
+                padding: 25px;
             }
-            
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .hero p {
-                font-size: 1极rem;
-            }
-            
-            .section-title {
-                font-size: 1.6rem;
-            }
-            
-            .logo {
-                font-size: 1.8rem;
-            }
-            
-            .hero {
-                min-height: 70vh;
-            }
-            
-            .contact-info, .contact-form {
-                padding: 1.5rem;
-            }
-            
-            .contact-item {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .contact-icon {
-                margin-right: 0;
-                margin-bottom: 0.5rem;
-                align-self: center;
-            }
-        }
-        
-        @media (min-width: 769px) and (max-width: 992px) {
-            .services {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .benefits-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .process-steps {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .contact-container {
-                flex-direction: row;
-                align-items: stretch;
-            }
-            
-            .contact-info, .contact-form {
-                flex: 1;
-            }
-        }
-        
-        @media (min-width: 993px) {
-            .services {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .benefits-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .process-steps {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .footer-content {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .about-content {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-            
-            .about-text {
-                flex: 1;
-                order: 1;
-            }
-            
-            .about-img {
-                flex: 1;
-                order: 2;
-            }
-            
-            .contact-container {
-                flex-direction: row;
-                align-items: stretch;
-            }
-            
-            .contact-info {
-                flex: 1;
-                order: 1;
-            }
-            
-            .contact-form {
-                flex: 1;
-                order: 2;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-        }
-        
-        @media (min-width: 1200px) {
-            .benefits-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .process-steps {
-                grid-template-columns: repeat(6, 1fr);
-            }
-        }
-        
-        /* Utility Classes */
-        .text-center {
-            text-align: center;
-        }
-        
-        .mt-1 { margin-top: 1rem; }
-        .mt-2 { margin-top: 2rem; }
-        .mt-3 { margin-top: 3rem; }
-        .mb-1 { margin-bottom: 1rem; }
-        .mb-2 { margin-bottom: 2rem; }
-        .mb-3 { margin-bottom: 3rem; }
-        
-        /* Custom Water Drop Animation */
-        .water-animation {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        /* WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 25px;
-            right: 25px;
-            background-color: #25d366;
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.4s;
-        }
-        
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.7);
-        }
-        
-        .whatsapp-icon {
-            margin-top: 4px;
         }
     </style>
 </head>
@@ -1148,440 +378,162 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <h1 class="logo">Mayuri <span>Water</span> Solution</h1>
-            <p class="tagline">Providing Complete Water Softening Solutions in Indore and Beyond</p>
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tint logo-icon"></i>
+                    <h1>Mayuri Water Solution</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    
-    <!-- Navigation -->
-    <nav>
-        <div class="container nav-container">
-            <button class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul id="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#process">Our Process</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    
+
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container hero-content">
-            <h1>Premium Water Softening Solutions for Cleaner, Healthier Water</h1>
-            <p>Experience the difference with our advanced water treatment systems. Serving Indore and surrounding areas with reliable, efficient, and affordable water softening solutions.</p>
-            <a href="#contact" class="btn">Get In Touch <i class="fas fa-arrow-right"></i></a>
+        <div class="container">
+            <h2>Premium Water Softening Solutions</h2>
+            <p>Experience the difference of soft, clean water throughout your home. Our advanced water softening systems remove hardness minerals, protecting your appliances and improving your water quality.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
         </div>
     </section>
-    
+
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We provide comprehensive water softening solutions for residential and commercial properties</p>
+            </div>
+            <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1591035896684-2极2e6f2c96b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Water Softening System">
-                    </div>
                     <div class="service-content">
-                        <h3>Water Softening Systems</h3>
-                        <p>Our advanced water softening systems remove hardness-causing minerals from your water supply.</p>
-                        <ul>
-                            <li>Removes calcium and magnesium</li>
-                            <li>Prevents scale buildup in pipes</li>
-                            <li>Improves soap efficiency</li>
-                            <li>Extends appliance lifespan</li>
-                        </ul>
+                        <i class="fas fa-water service-icon"></i>
+                        <h3>Water Softener Installation</h3>
+                        <p>Professional installation of high-quality water softening systems tailored to your specific needs and water usage.</p>
                     </div>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Water Purification">
-                    </div>
                     <div class="service-content">
-                        <h3>Water Purification</h3>
-                        <p>Comprehensive water purification solutions for safe, clean drinking water.</p>
-                        <ul>
-                            <li>Multi-stage filtration process</li>
-                            <li>Removes contaminants and impurities</li>
-                            <li>Improves taste and odor</li>
-                            <li>RO and UV technology available</li>
-                        </ul>
+                        <i class="fas fa-tools service-icon"></i>
+                        <h3>Maintenance & Repair</h3>
+                        <p>Regular maintenance and prompt repair services to keep your water softening system running efficiently.</p>
                     </div>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Maintenance & Service">
-                    </div>
                     <div class="service-content">
-                        <h3>Maintenance & Service</h3>
-                        <p>Regular maintenance and servicing to keep your water systems running efficiently.</p>
-                        <ul>
-                            <li>Regular system check-ups</li>
-                            <li>Filter replacement services</li>
-                            <li>System repairs and troubleshooting</li>
-                            <li>Emergency service available</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="service-benefits">
-                <h2 class="section-title">Benefits of Softened Water</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-shower"></i>
-                        </div>
-                        <h4>Softer Skin & Hair</h4>
-                        <p>Soft water is gentler on your skin and hair, preventing dryness and irritation.</p>
-                    </div>
-                    
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-tshirt"></i>
-                        </div>
-                        <h4>Longer Lasting Clothes</h4>
-                        <p>Soft water helps your clothes last longer by preventing mineral buildup in fabrics.</p>
-                    </div>
-                    
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-tint-slash"></i>
-                        </div>
-                        <h4>No More Scale Buildup</h4>
-                        <p>Prevent scale buildup in your pipes and appliances, extending their lifespan.</p>
+                        <i class="fas fa-vial service-icon"></i>
+                        <h3>Water Testing</h3>
+                        <p>Comprehensive water testing services to determine the hardness level and recommend the right solution.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- About Section -->
-    <section id="about" class="about">
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">About Mayuri Water Solution</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>At Mayuri Water Solution, we are committed to providing high-quality water softening and purification solutions to homes and businesses in Indore and the surrounding areas. With years of experience in the industry, we understand the unique water challenges faced by our community.</p>
-                    <p>Our team of skilled professionals is dedicated to delivering personalized solutions that meet your specific water treatment needs. We use only the latest technology and highest quality products to ensure your complete satisfaction.</p>
-                    
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div>
-                                <h4>Expert Technicians</h4>
-                                <p>Our certified technicians have extensive experience in water treatment systems.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div>
-                                <h4>Quality Products</h4>
-                                <p>We use only the highest quality components and systems from trusted manufacturers.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div>
-                                <h4>Customer Satisfaction</h4>
-                                <p>Your satisfaction is our top priority. We stand behind our work with comprehensive warranties.</p>
-                            </div>
-                        </div>
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Reach out to us for a free consultation and water testing</p>
+            </div>
+            <div class="form-container">
+                <h3 class="form-title">Connect with us on WhatsApp</h3>
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
                     </div>
-                </div>
-                
-                <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1590622783539-bae63极极a2e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mayuri Water Solution Team">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Water Process Section -->
-    <section id="process" class="water-process">
-        <div class="container">
-            <h2 class="section-title">Our Water Softening Process</h2>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h4>Water Analysis</h4>
-                    <p>We begin by testing your water to determine hardness levels and identify specific contaminants.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h4>System Selection</h4>
-                    <p>Based on the analysis, we recommend the ideal water softening system for your needs.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h4>Professional Installation</h4>
-                    <p>Our certified technicians install your system with minimal disruption to your home or business.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h4>Ion Exchange Process</h4>
-                    <p>The system uses resin beads to exchange hardness ions for sodium ions, softening the water.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <h4>Automatic Regeneration</h4>
-                    <p>The system automatically cleans and recharges the resin beads to maintain efficiency.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">6</div>
-                    <h4>Ongoing Maintenance</h4>
-                    <p>We provide regular maintenance and support to keep your system running optimally.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Address</h4>
-                                <p>803/9 Nanda Nagar, Indore (MP) INDIA</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <a href="tel:+919827011653" style="color: white;">+91 9827011653</a>
-                                <a href="tel:+919302677717" style="color: white;">+91 9302677717</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <a href="mailto:support@mwsindia.com" style="color: white;">support@mwsindia.com</a>
-                                <a href="mailto:mayuriwatersolution@rediffmail.com" style="color: white;">mayuriwatersolution@rediffmail.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Business Hours</h4>
-                                <p>Monday - Saturday: 9AM - 6PM</p>
-                                <p>Sunday: Emergency Services Only</p>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your mobile number" required>
                     </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" placeholder="Tell us about your water softening needs" required></textarea>
+                    </div>
+                    <button type="submit" class="btn whatsapp-btn">
+                        <i class="fab fa-whatsapp whatsapp-icon"></i> Send via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt info-icon"></i>
+                    <h3>Our Address</h3>
+                    <p>803/9 Nanda Nagar, Indore (MP) INDIA</p>
                 </div>
-                
-                <div class="contact-form">
-                    <h3 class="text-center">Send Us a Message</h3>
-                    <form id="waterForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" class="form-control" placeholder="Tell us about your water treatment needs" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
-                    </form>
+                <div class="info-card">
+                    <i class="fas fa-envelope info-icon"></i>
+                    <h3>Email Us</h3>
+                    <p>support@mwsindia.com</p>
+                    <p>mayuriwatersolution@rediffmail.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone-alt info-icon"></i>
+                    <h3>Call Us</h3>
+                    <p>9827011653</p>
+                    <p>9302677717</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Mayuri Water Solution</h3>
-                    <p>Providing complete water softening and purification solutions to the Indore community since 2010. We are committed to delivering high-quality water treatment systems and exceptional customer service.</p>
-                    <div class="social-links">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Mayuri Water Solution provides premium water softening systems and services to residential and commercial customers in Indore and beyond.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 803/9 Nanda Nagar, Indore (MP) INDIA</p>
+                    <p><i class="fas fa-envelope"></i> support@mwsindia.com</p>
+                    <p><i class="fas fa-phone"></i> 9827011653, 9302677717</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#process">Our Process</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Our Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Water Softening Systems</a></li>
-                        <li><a href="#">Water Purification</a></li>
-                        <li><a href="#">Maintenance & Service</a></li>
-                        <li><a href="#">Water Testing</a></li>
-                        <li><a href="#">Commercial Solutions</a></li>
-                    </ul>
-                </div>
             </div>
-            
             <div class="copyright">
-                <p>&copy; 2023 Mayuri Water Solution. All Rights Reserved. | Designed with for clean water solutions.</p>
+                <p>&copy; 2023 Mayuri Water Solution. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/919827011653?text=Hello%20Mayuri%20Water%20Solution,%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp whatsapp-icon"></i>
-    </a>
-    
+
     <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const menu = document.getElementById('menu');
-        
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a link
-        const navLinks = document.querySelectorAll('nav a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('active');
-            });
-        });
-        
-        // Form submission handling
-        const contactForm = document.getElementById('waterForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Get form values
-                const name = document.getElementById('name').value;
-                const phone = document.getElementById('phone').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-                
-                // Create WhatsApp message
-                const whatsappMessage = `Hello Mayuri Water Solution,%0A%0AMy name is ${name}.%0APhone: ${phone}%0AEmail: ${email}%0A%0AMessage: ${message}%0A%0AI would like to know more about your services.`;
-                
-                // Redirect to WhatsApp
-                window.open(`https://wa.me/919827011653?text=${whatsappMessage}`, '_blank');
-                
-                // Reset form
-                contactForm.reset();
-                
-                // Show confirmation (optional)
-                alert('Thank you for your message! We will contact you shortly.');
-            });
-        }
-        
-        // Create water drop animation
-        function createWaterDrop() {
-            const waterProcessSection = document.querySelector('.water-process');
-            if (!waterProcessSection) return;
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
             
-            const drop = document.createElement('div');
-            drop.classList.add('water-drop');
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
             
-            // Random position
-            const posX = Math.random() * 100;
-            drop.style.left = `${posX}%`;
+            const whatsappMessage = `Hello, I am ${name}. ${message}. My contact number is ${phone}.`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://wa.me/919827011653?text=${encodedMessage}`;
             
-            // Random size
-            const size = Math.random() * 10 + 5;
-            drop.style.width = `${size}px`;
-            drop.style.height = `${size}px`;
-            
-            // Random opacity
-            drop.style.opacity = Math.random() * 0.5 + 0.3;
-            
-            waterProcessSection.appendChild(drop);
-            
-            // Remove drop after animation completes
-            setTimeout(() => {
-                if (drop.parentNode) {
-                    drop.parentNode.removeChild(drop);
-                }
-            }, 3000);
-        }
-        
-        // Generate water drops periodically
-        setInterval(createWaterDrop, 300);
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+            window.open(whatsappUrl, '_blank');
         });
     </script>
 </body>
